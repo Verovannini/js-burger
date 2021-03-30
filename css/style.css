@@ -17,6 +17,10 @@ body{
     height: 100vh;
     background-color: #fff;
 }
+
+.text-center{
+    text-align: center;
+}
 /* END COMMON */
 
 /* HEADER */
@@ -35,15 +39,23 @@ h1{
 main{
     height: calc( 100% - 140px );
     overflow: scroll;
-    padding: 30px 30px;
+    padding: 25px 30px;
 }
 
 main img{
     height: 40px;
 }
 
-main .burger-name-container label{
-    
+#burger-name{
+    border: none;
+    font-size: 1.3em;
+    padding: 5px 0;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 1.1em;
+    padding: 15px 0 10px 0;
 }
 
 main .ingredients-container{
@@ -55,6 +67,27 @@ main .ingredients-container .ingredient{
     padding: 5px 0;
     display: flex;
     align-items: center;
+}
+main .ingredients-container label{
+    padding: 0 10px;
+}
+
+main .discount-coupon{
+    padding: 25px 0;
+}
+#burger-discount{
+    background-color: #fff4e2;
+    border: none;
+    width: 50%;
+    padding: 5px;
+}
+
+#calculate-button{
+    background-color: #fdbc41;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
 }
 /* END MAIN */
 
