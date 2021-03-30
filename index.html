@@ -6,10 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js Burger</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!-- Start App Wrapper -->
+    <div class="app-wrapper">
+        <!-- START HEADER -->
+        <header class="section-padd">
+            <h1>Create Your Burger</h1>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- START MAIN -->
+        <main>
+            <!-- Start Burger Name -->
+            <div>
+                <label for="burger-name">Name Your Burger</label>
+                <input id="burger-name" type="text" placeholder="Name Your Burger">
+            </div>
+            <!-- End Burger Name -->
+
+            <!-- Start Burger Ingredients -->
+            <div>
+                <h2>Ingredients</h2>
+
+                <div class="ingredients-container">
+                    <!-- Start Ingredient -->
+                    <div class="ingredient">
+                        <img src="img/cheese.svg" alt="Image Cheese">
+                        <label for="ingredient-cheese">Cheese</label>
+                        <input class="burger-ingredient" id="ingredient-cheese" type="checkbox">
+                    </div>
+                    <!-- End Ingredient -->
+
+                    <!-- Start Ingredient -->
+                    <div class="ingredient">
+                        <img src="img/tomato.svg" alt="Image Tomato">
+                        <label for="ingredient-tomato">Tomato</label>
+                        <input class="burger-ingredient" id="ingredient-tomato" type="checkbox">
+                    </div>
+                    <!-- End Ingredient -->
+
+                    <!-- Start Ingredient -->
+                    <div class="ingredient">
+                        <img src="img/fried-egg.svg" alt="Image Egg">
+                        <label for="ingredient-egg">Egg</label>
+                        <input class="burger-ingredient" id="ingredient-egg" type="checkbox">
+                    </div>
+                    <!-- End Ingredient -->
+
+                    <!-- Start Ingredient -->
+                    <div class="ingredient">
+                        <img src="img/lettuce.svg" alt="Image Lettuce">
+                        <label for="ingredient-lettuce">Lettuce</label>
+                        <input class="burger-ingredient" id="ingredient-lettuce" type="checkbox">
+                    </div>
+                    <!-- End Ingredient -->
+
+                    <!-- Start Ingredient -->
+                    <div class="ingredient">
+                        <img src="img/mustard.svg" alt="Image Mustard">
+                        <label for="ingredient-mustard">Mustard</label>
+                        <input class="burger-ingredient" id="ingredient-mustard" type="checkbox">
+                    </div>
+                    <!-- End Ingredient -->
+
+                    <!-- Start Ingredient -->
+                    <div class="ingredient">
+                        <img src="img/ketchup.svg" alt="Image Ketchup">
+                        <label for="ingredient-ketchup">Ketchup</label>
+                        <input class="burger-ingredient" id="ingredient-ketchup" type="checkbox">
+                    </div>
+                    <!-- End Ingredient -->
+                    
+                </div>
+            </div>
+            <!-- End Burger Ingredients -->
+
+            <!-- Start Burger Discount -->
+            <div>
+                <label for="burger-discount">Discount Coupon</label>
+                <input id="burger-discount" type="text" placeholder="12354ABCDEF">
+            </div>
+            <!-- End Burger Discount -->
+
+            <!-- Start Button -->
+            <div>
+                <button>calculate</button>
+            </div>
+            <!-- End Button -->
+        </main>
+        <!-- END MAIN -->
+
+        <!-- START FOOTER -->
+        <footer class="section-padd">
+            <div>Your Price</div>
+            <div id="price"></div>
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+    <!-- End App Wrapper -->
 
     <script src="js/script.js"></script>
 </body>
