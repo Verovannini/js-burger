@@ -5,6 +5,13 @@ var calculateButton = document.getElementById('calculate-button');
 
 calculateButton.addEventListener ( 'click', function() {
     // Creare un alert se si lascia il nome vuoto
+    // Prendere il valore del nome inserito dall'utente in burger-name
+    var burgerNameElement = document.getElementById('burger-name');
+    var burgerName = burgerNameElement.value;
+
+    if ( burgerName == '' ) {
+        alert('Give your burger a name!');
+    }
 
     // Calcolare il prezzo dell'hamburger sommando al prezzo base il costo di ogni elemento che risulta checked
     // Selezionare tutte le checkbox utilizzando la classe burger-ingredient
@@ -39,5 +46,4 @@ calculateButton.addEventListener ( 'click', function() {
 
     // Stampare il prezzo
     document.getElementById('price').innerHTML = burgerPrice.toFixed(2) + ' €';
-
 } );
