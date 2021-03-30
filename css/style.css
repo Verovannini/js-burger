@@ -60,6 +60,7 @@ main .ingredients-container .ingredient{
 /* FOOTER */
 footer{
     background-color: #d23359;
+    color: #fff;
     height: 60px;
     overflow: hidden;
 }
