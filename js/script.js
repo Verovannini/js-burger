@@ -22,8 +22,6 @@ calculateButton.addEventListener ( 'click', function() {
         }
     }
 
-    console.log(burgerPrice);
-
     // Verificare se il coupon inserito dall'utente è valido, se è valido calcolare lo sconto del 10%
     // Creare un array con codici coupon
     var couponList = ['74692SNTUFG', '83746MSNFHY', '92673GTSJDO', '19264ICUANE'];
@@ -31,9 +29,15 @@ calculateButton.addEventListener ( 'click', function() {
     // Prendere il valore del coupon inserito dall'utente
     var couponUtenteElement = document.getElementById('burger-discount');
     var couponUtente = couponUtenteElement.value;
-    console.log(couponUtente);
 
+    // Cerco il coupon inserito dall'utente nell'array, se è presente applico lo sconto del 10%
+    var couponTrovato = couponList.includes(couponUtente);
 
+    if ( couponTrovato == true ) {
+        burgerPrice = burgerPrice - (burgerPrice * 0.1);
+    }
 
     // Stampare il prezzo
+    document.getElementById('price').innerHTML = burgerPrice.toFixed(2) + ' €';
+
 } );
